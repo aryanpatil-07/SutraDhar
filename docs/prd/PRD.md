@@ -11,7 +11,7 @@
 
 Traditional Tabletop Roleplaying Games (TTRPGs) such as Dungeons & Dragons provide unmatched social camaraderie and tactile satisfaction: rolling physical dice, moving miniatures, and gathering with friends. However, they place an immense cognitive burden on the human Game Master (GM), who must memorize hundreds of pages of rules, track numerical states (HP, stamina, spell slots, inventory, initiative), manage pacing, roleplay multiple non-player characters (NPCs), and curate background music. Conversely, Virtual Tabletops (VTTs) automate bookkeeping but trap players behind laptops, destroying the tactile essence of the game.
 
-**SutraDhar** resolves this dichotomy by creating a **hybrid physical-digital TTRPG companion engine**. Players sit around a physical table with a printed battlemap, physical character cards, wooden tokens, and physical d20 dice. Meanwhile, a digital engine running in Flutter listens to the gameplay via ambient microphones, transcribes the table dialogue, uses a Large Language Model (LLM) with strict JSON schemas to extract state changes, validates those actions against a deterministic rules engine, orchestrates cross-fading ambient soundscapes, and powers a dual-screen interface (a private **DM Cockpit** for the human GM and a public **Tabletop View** for the players).
+**SutraDhar** resolves this dichotomy by creating a **hybrid physical-digital TTRPG companion engine**. Players sit around a physical table with a printed battlemap, physical character cards, wooden tokens, and physical 2d6 dice (two six-sided dice). Meanwhile, a digital engine running in Flutter listens to the gameplay via ambient microphones, transcribes the table dialogue, uses a Large Language Model (LLM) with strict JSON schemas to extract state changes, validates those actions against a deterministic rules engine, orchestrates cross-fading ambient soundscapes, and powers a dual-screen interface (a private **DM Cockpit** for the human GM and a public **Tabletop View** for the players).
 
 The debut adventure, **The Lost Ship**, places four players into the maritime mystery of the 11th-century Chola Empire, combining gripping mystery with authentic historical exploration.
 
@@ -31,7 +31,7 @@ The debut adventure, **The Lost Ship**, places four players into the maritime my
 - **Physical-First, Digital-Ambient**: If a mechanic can be physical (rolling dice, touching tokens, moving cards), it stays physical. The digital engine is an invisible, ambient co-host, not a screen barrier.
 - **Deterministic Rules, Generative Narration**: Mathematics, dice checks, health points, and inventory are governed by strict, unyielding deterministic code. The AI only handles narrative prose, dialogue flavor, and consequence descriptions.
 - **Fixed Truth, Flexible Routing**: The underlying mystery timeline is absolute and immutable. The AI's job is not to generate random plotlines, but to adapt player choices to this canonical truth.
-- **Failure as Story Momentum**: A failed d20 check never produces a dead-end "nothing happens" state. It always extracts a cost: raising the Threat Track, consuming Supplies, altering NPC trust, or introducing unexpected obstacles.
+- **Failure as Story Momentum**: A failed 2d6 check never produces a dead-end "nothing happens" state. It always extracts a cost: raising the Threat Track, consuming Supplies, altering NPC trust, or introducing unexpected obstacles.
 - **Subtle Historical Immersion**: Historical facts about 11th-century Chola maritime trade, court bureaucracy, and navigation are woven into clues and mechanics, granting in-game advantages to observant players.
 
 ---
@@ -146,7 +146,7 @@ The debut adventure, **The Lost Ship**, places four players into the maritime my
 To preserve tabletop magic, physical equipment requirements are strictly documented:
 - **Battlemap**: 24" x 36" printed parchment map of the Chola coastline. No embedded wires, RFID, or cameras are required.
 - **Character Reference Cards**: High-durability 350 GSM matte cards detailing stats, stamina counters, and abilities.
-- **Physical Dice**: Standard tabletop polyhedral d20 dice rolled by players onto the table.
+- **Physical Dice**: Two standard six-sided dice (2d6) per player rolled onto the table. Scoring = (Die 1 + Die 2) + Attribute Modifier + Situational Bonus.
 - **Clue, Event & NPC Cards**: Physical cards handed to players upon discovery.
 - **Tokens**: Wooden Supply tokens, Gold tokens, and an acrylic Threat Clock (0–6).
 - **Audio Hardware**: Recommended standard Bluetooth speaker positioned under or beside the table.

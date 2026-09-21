@@ -19,7 +19,7 @@ flowchart TB
         Players["Four Players & DM"]
         Map["24x36 Parchment Map"]
         Cards["Character, Clue & NPC Cards"]
-        Dice["Physical d20 Dice"]
+        Dice["Physical 2d6 Dice (Two 6-Sided)"]
     end
 
     subgraph Audio_Ingestion ["2. Speech & Audio Ingestion"]

@@ -54,7 +54,7 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
   - *Choice A (Supplies)*: Demand $+2$ extra Supplies. Consequence: Delay costs time; **Threat starts at 1**.
   - *Choice B (Authority)*: Request an Imperial Letter of Passage. Consequence: $+2$ Influence on royal officials, but smugglers become wary.
   - *Choice C (Swift Departure)*: Leave immediately with standard gear (8 Supplies, 3 Gold, Threat 0).
-  - *Choice D (Interrogate Official)*: Roll Knowledge (DC 11) to ask about the crew; learn the navigator warned of strange lights south of the harbor.
+  - *Choice D (Interrogate Official)*: Roll Knowledge (DC 9) to ask about the crew; learn the navigator warned of strange lights south of the harbor.
 
 ---
 
@@ -62,7 +62,7 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 - **Setting**: The dusty royal highway winding east toward the Bay of Bengal through coconut groves and irrigation canals.
 - **Encounter**: A spice merchant’s wooden cart has suffered a shattered wheel.
 - **Player Choices**:
-  - *Help Repair*: Kavalan rolls Might (DC 11). Costs 30 minutes; merchant shares rumor: *"Armed mercenaries from the south have been asking questions about an overdue ship."*
+  - *Help Repair*: Kavalan rolls Might (DC 9). Costs 30 minutes; merchant shares rumor: *"Armed mercenaries from the south have been asking questions about an overdue ship."*
   - *Ignore*: Travel directly; arrive at port with zero time lost.
 
 ---
@@ -70,10 +70,10 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 ### Chapter 2: Nagapattinam Harbor Sandbox
 - **Setting**: The bustling, noisy port basin crowded with merchant ships, foreign Arab and Srivijayan traders, and dock workers.
 - **The 4 Investigative Nodes**:
-  1. **Harbor Records Office**: Kalviyalār examines palm-leaf registers (Knowledge DC 11). Discovers the *Kadal-Puli*'s destination was secretly erased and altered southward.
-  2. **The Dock Worker (Ananthan)**: Vēṭan spots an evasive clerk watching the docks (Agility DC 11). Under gentle questioning or 1 Gold bribe, Ananthan confesses: armed men threatened him to falsify the ship's course.
-  3. **The Veteran Fisherman (Muthu)**: Vāṇiyan buys tea and talks to local fishers (Influence DC 11). Muthu reveals: *"Three nights ago, a ship limped south without lantern lights... but with a strange bronze glow."*
-  4. **The Berth Warehouse**: Kavalan searches the abandoned storage area (Might DC 11). Finds bloodstained sailcloth and a discarded **Bronze Shaving** matching ancient temple metallurgy.
+  1. **Harbor Records Office**: Kalviyalār examines palm-leaf registers (Knowledge DC 9). Discovers the *Kadal-Puli*'s destination was secretly erased and altered southward.
+  2. **The Dock Worker (Ananthan)**: Vēṭan spots an evasive clerk watching the docks (Agility DC 9). Under gentle questioning or 1 Gold bribe, Ananthan confesses: armed men threatened him to falsify the ship's course.
+  3. **The Veteran Fisherman (Muthu)**: Vāṇiyan buys tea and talks to local fishers (Influence DC 9). Muthu reveals: *"Three nights ago, a ship limped south without lantern lights... but with a strange bronze glow."*
+  4. **The Berth Warehouse**: Kavalan searches the abandoned storage area (Might DC 9). Finds bloodstained sailcloth and a discarded **Bronze Shaving** matching ancient temple metallurgy.
 
 ---
 
@@ -81,9 +81,9 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 - **Setting**: A small stilted fishing hamlet south of Nagapattinam. Several catamarans are smashed on the beach.
 - **Tension**: Five armed mercenaries (**The Ashen Seekers**) are intimidating local fishermen.
 - **Branching Options**:
-  - *Option 1 (Intervene & Defend)*: Kavalan steps in. DC 12 combat or DC 14 Thoodhuvar diplomacy. Rescuing the village makes Muthu’s family **Helpful**; they supply fresh fish and point out foot trails.
+  - *Option 1 (Intervene & Defend)*: Kavalan steps in. DC 10 combat or DC 11 Thoodhuvar diplomacy. Rescuing the village makes Muthu’s family **Helpful**; they supply fresh fish and point out foot trails.
   - *Option 2 (Bargain with Seekers)*: Vāṇiyan speaks with the mercenary lieutenant. Learns they take orders from **Sembiyan Arul**.
-  - *Option 3 (Circle Around via Stealth)*: Vēṭan rolls Agility (DC 11) to track footprints leading into the scrub forest.
+  - *Option 3 (Circle Around via Stealth)*: Vēṭan rolls Agility (DC 9) to track footprints leading into the scrub forest.
 
 ---
 
@@ -99,16 +99,16 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 - **Encounter**: Sembiyan Arul emerges with three archers on the ridge.
 - **Character Profile**: Sembiyan is a pragmatic veteran treasure hunter, not a mindless monster.
 - **Dialogue & Resolution**:
-  - *Fight*: Sembiyan has Defense 14, 18 HP. If reduced to 6 HP, he yields.
-  - *Negotiate (Influence DC 14)*: Vāṇiyan points out that neither knows what the artifact actually does; proposes temporary truce to reach the wreck.
-  - *Deceive (Influence DC 12)*: Convince Sembiyan the artifact was already recovered by the imperial navy.
+  - *Fight*: Sembiyan has Defense 11, 14 HP. If reduced to 5 HP, he yields.
+  - *Negotiate (Influence DC 11)*: Vāṇiyan points out that neither knows what the artifact actually does; proposes temporary truce to reach the wreck.
+  - *Deceive (Influence DC 10)*: Convince Sembiyan the artifact was already recovered by the imperial navy.
 
 ---
 
 ### Chapter 6: The Wreck of the Kadal-Puli
 - **Setting**: A rocky coastal cove where the torn wooden hull of the *Kadal-Puli* lies wedged against granite boulders.
 - **Discoveries**:
-  - *Hull Inspection (Seamanship DC 11)*: The planks were not crushed by rocks—they were smashed from above by an immense, blunt force.
+  - *Hull Inspection (Seamanship DC 9)*: The planks were not crushed by rocks—they were smashed from above by an immense, blunt force.
   - *Captain's Quarters*: Inside an iron-bound locker, players recover the **Imperial Royal Court Cylinder** (Mission Objective 1 secured!).
   - *The Bronze Seal Fragment*: Lodged in the splintered deck is a heavy, ornate bronze disc inscribed with circular runes.
 
@@ -118,7 +118,7 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 - **Objective**: Sail to the uncharted island coordinate discovered in the captain's log.
 - **Route Selection**:
   - *Route 1 (Safe Coastal Channel)*: Costs 2 Supplies. Calm waters, zero risk, but Threat ticks $+1$ due to time.
-  - *Route 2 (Fast Monsoon Channel)*: Seamanship check (DC 14). Success: arrive in half the time. Failure: 1 Supply lost and 1d4 damage to vessel.
+  - *Route 2 (Fast Monsoon Channel)*: Seamanship check (DC 11). Success: arrive in half the time. Failure: 1 Supply lost and 1d4 damage to vessel.
   - *Route 3 (Navigator's Hidden Current)*: Available if the Marakkalam Navigator is in the party. Bypasses all hazards with ease.
 - **Event: The Floating Survivor**: The party spots a clinging sailor. Rescuing him costs 1 Supply, but he warns: *"Do not touch the pedestal... it only wants its seal returned!"*
 
@@ -136,7 +136,7 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 ### Chapter 9: The Sacred Ruins (Ashen Sanctum)
 - **Setting**: A colossal subterranean chamber carved from obsidian stone, lit by eerie phosphorescent lichen.
 - **Focal Point**: At the center of the hall stands a carved basalt pedestal with a hollow circular depression matching the Bronze Seal.
-- **Epigraphy Check (Kalviyalār Knowledge DC 12)**:
+- **Epigraphy Check (Kalviyalār Knowledge DC 10)**:
   > *"Bound by the Sun and Sea to stand silent vigil. Let no mortal hand sever the Seal, lest the Ashen Sentinel break the sleep of ages."*
 - **Revelation**: The crew of the *Kadal-Puli* did not disappear due to piracy or storms; their greed awakened an ancient protector.
 
@@ -145,8 +145,8 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 ### Chapter 10: Climax — Awakening of the Ashen Guardian
 - **The Trigger**: As players approach the pedestal, the ground trembles. From the shadows behind the altar, an 8-foot-tall construct of weathered stone and bronze awakens. Its hollow eyes burn with amber flame.
 - **Encounter Mechanics**:
-  - **The Guardian (Defense 16, HP 24)**: Deals $1\text{d6}+2$ damage. Resistant to mundane piercing arrows.
-  - **The Peaceful Solution (Tactical Puzzle)**: Re-inserting the Bronze Seal into the central pedestal requires two successful actions: one character distracts/holds off the construct (Might DC 14), while another sprints to the pedestal and locks the seal into place (Agility DC 12).
+  - **The Guardian (Defense 13, HP 20)**: Deals $1\text{d6}+2$ damage. Resistant to mundane piercing arrows.
+  - **The Peaceful Solution (Tactical Puzzle)**: Re-inserting the Bronze Seal into the central pedestal requires two successful actions: one character distracts/holds off the construct (Might DC 11), while another sprints to the pedestal and locks the seal into place (Agility DC 10).
   - **The Combat Solution**: Defeating the Guardian in physical battle. Requires coordinated teamwork (Kavalan guarding the Scholar while everyone attacks its joints).
 
 ---
@@ -155,7 +155,7 @@ The cardinal rule of SutraDhar is that **the underlying history of the world is 
 - **Tension**: Just as the Guardian situation resolves, Sembiyan Arul and his surviving mercenaries enter the sanctum with drawn blades.
 - **Sembiyan's Demand**: *"Hand over the bronze seal. That metal alone will buy a palace in Sri Lanka."*
 - **Four Paths**:
-  - *Path A (Convince Sembiyan - Influence DC 14)*: Explain the truth—the seal is not gold; it is an active trigger that will bring the cave down on all of them. Sembiyan withdraws peacefully.
+  - *Path A (Convince Sembiyan - Influence DC 11)*: Explain the truth—the seal is not gold; it is an active trigger that will bring the cave down on all of them. Sembiyan withdraws peacefully.
   - *Path B (Fight)*: Decisive skirmish. Sembiyan is outmatched if the party is united.
   - *Path C (Trick Him)*: Hand him a fake bronze trade component from the ship’s cargo.
   - *Path D (Surrender the Seal)*: Hand him the real seal; the Guardian immediately awakens in berserk fury, collapsing the sanctum.

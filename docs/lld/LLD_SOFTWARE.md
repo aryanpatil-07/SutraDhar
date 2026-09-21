@@ -158,7 +158,7 @@ class CharacterState {
   final int currentHp;
   final int maxHp;
   
-  // d20 Core Attributes
+  // Core Attributes (2d6 Modifiers)
   final int might;
   final int agility;
   final int knowledge;
@@ -242,8 +242,9 @@ CANONICAL FACTS (IMMUTABLE TRUTH):
 
 OPERATIONAL RULES:
 - PLAYER AGENCY & DIALOGUE: All player decisions are made through spoken table dialogue and roleplay. Never make decisions or choose paths on behalf of the players.
-- ZERO DIGITAL DICE: The digital companion never generates random or digital dice rolls. Dice rolls are exclusively physical d20s rolled on the table by human players and reported verbally.
-- PHYSICAL DICE ONLY FOR RISKY CHECKS: Routine decisions (travel route choices, dialogue, resource trades) are resolved purely through spoken conversation without rolls. Physical d20 checks are only required when an action carries risk, danger, or opposition.
+- ZERO DIGITAL DICE: The digital companion never generates random or digital dice rolls. Dice rolls are exclusively physical 2d6 (two six-sided dice) rolled on the table by human players and reported verbally.
+- SCORING FORMULA: Total Score = (Die 1 + Die 2) + Attribute Modifier + Situational Bonus. Evaluated against calibrated 2d6 DCs (DC 7 Easy, DC 9 Routine, DC 11 Difficult, DC 13 Very Difficult, DC 15 Exceptional).
+- PHYSICAL DICE ONLY FOR RISKY CHECKS: Routine decisions (travel route choices, dialogue, resource trades) are resolved purely through spoken conversation without rolls. Physical 2d6 checks are only required when an action carries risk, danger, or opposition.
 - DETERMINISTIC ENFORCEMENT: Never alter character stats arbitrarily; only propose validated state deltas based on reported physical rolls and conversational choices.
 - FAIL FORWARD: If a physical check fails, create a narrative complication (e.g., increase Threat, consume Supplies, alter NPC Trust, introduce an obstacle) rather than a dead-end stop.
 - Keep narration under 3 sentences: evocative, punchy, and atmospheric for tabletop speech.
@@ -276,11 +277,15 @@ OPERATIONAL RULES:
       "type": "object",
       "properties": {
         "attribute_used": { "type": "string", "enum": ["might", "agility", "knowledge", "influence", "seamanship"] },
-        "dice_roll": { "type": "integer", "minimum": 1, "maximum": 20 },
-        "total_value": { "type": "integer" },
+        "die1": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "die2": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "dice_sum": { "type": "integer", "minimum": 2, "maximum": 12 },
+        "attribute_modifier": { "type": "integer" },
+        "situational_bonus": { "type": "integer" },
+        "total_value": { "type": "integer", "description": "Sum of (die1 + die2) + attribute_modifier + situational_bonus" },
         "target_dc": { "type": "integer" },
         "is_success": { "type": "boolean" },
-        "is_critical": { "type": "boolean" }
+        "is_critical": { "type": "boolean", "description": "Natural 12 (Double 6s) or Natural 2 (Double 1s)" }
       }
     },
     "state_deltas": {
@@ -512,7 +517,7 @@ class CluesDiscoveredTable extends Table {
 - **PTT Button**: Prominent circular floating action button with visual microphone waveform feedback.
 - **Action Verification Queue**: Renders `ActionQueueCard` containing:
   - Color-coded action banner (`COMBAT: RED`, `CHECK: AMBER`, `TRAVEL: BLUE`).
-  - Extracted dice roll vs DC badge (`18 vs DC 14: SUCCESS`).
+  - Extracted dice roll vs DC badge (`12 vs DC 11: SUCCESS - [5 + 4] + Mod: 3`).
   - Proposed numerical state deltas (`Threat +1`, `Supplies -1`).
   - **[Accept]**, **[Edit]**, and **[Reject]** action buttons.
 - **Secret Lore Accordion**: Reveals private NPC motivations and canonical insights invisible to players.

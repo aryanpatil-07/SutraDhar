@@ -166,7 +166,7 @@ For a standard 4-player game, players choose any 4 of these 6 characters.
 
 When the AI companion parses table dialogue, it enforces the following archetype awareness:
 1. **Highlighting Archetype Strengths**: If a Scholar examines an inscription, the AI output should use academic vocabulary and historical lore; if a Merchant examines the same stone, the AI highlights its potential market value and craftsmanship origin.
-2. **Preventing Class Encroachment**: If the Kavalan attempts to decipher ancient Grantha without the Scholar, the AI sets a steep DC 17 check; if the Scholar does it, the DC drops to routine DC 11.
+2. **Preventing Class Encroachment**: If the Kavalan attempts to decipher ancient Grantha without the Scholar, the AI sets a steep DC 13 check; if the Scholar does it, the DC drops to routine DC 9.
 3. **Recognizing Natural Language Triggers**:
    - *"I use my connections to find a smuggler"* $\rightarrow$ Invokes Vāṇiyan's `Connections` ability.
    - *"I step in and invoke royal authority before they draw swords"* $\rightarrow$ Invokes Thoodhuvar's `Diplomatic Immunity`.

@@ -3,7 +3,7 @@
 
 | Rulebook Version | Core System | Target Party Size | Target Session Length |
 | :--- | :--- | :--- | :--- |
-| **v1.0.0** | SutraDhar d20 Engine | 4 Players + 1 Game Master (or Solo AI) | 20–40 Minutes (5–10 Min Demo) |
+| **v1.0.0** | SutraDhar 2d6 Engine | 4 Players + 1 Game Master (or Solo AI) | 20–40 Minutes (5–10 Min Demo) |
 
 ---
 
@@ -12,39 +12,41 @@
 In SutraDhar, **the rules are absolute, transparent, and deterministic**.
 - **Player Decision Agency**: All decisions are made **exclusively by the human players through natural table dialogue, debates, and roleplay**. The AI never dictates, automates, or selects what the party decides to do.
 - **Zero Digital Dice Rolling**: The companion app **contains no digital dice rollers**. Dice are never rolled on a screen.
-- **Physical Dice for Action Resolution**: When a player takes a risky or uncertain action, the player rolls a **physical d20 die onto the table**. The resulting number is spoken aloud, parsed by the speech engine, and validated against the target DC.
+- **Physical Dice for Action Resolution**: When a player takes a risky or uncertain action, the player rolls **two physical six-sided dice (2d6) onto the table**. The score is calculated as $(\text{Die}_1 + \text{Die}_2) + \text{Attribute Modifier} + \text{Situational Bonus}$, spoken aloud, parsed by the speech engine, and validated against the target DC.
 - **Dialogue-Driven Resolution**: Everyday decisions (where to travel, how to divide supplies, what to say to an official, whether to help an NPC) are resolved through **pure spoken conversation**, not dice rolls.
 - **Deterministic Bounds**: Health totals, supply counts, threat clocks, and inventory are governed by hard mathematical boundaries. The AI Game Master provides atmospheric description, roleplays NPCs, and reflects consequence, but **it cannot silently modify stats, override player agency, or invent rules**.
 - **Failure is Momentum**: A failed physical check never produces an empty "nothing happens" dead end. It always costs resources, burns time, escalates Threat, or creates an alternative complication.
 
 ---
 
-## 2. Core Resolution Engine (d20 Checks)
+## 2. Core Resolution Engine (2d6 Checks)
 
-When a player attempts an action where the outcome is uncertain and failure carries meaningful consequences, the player rolls a physical 20-sided die (d20).
+When a player attempts an action where the outcome is uncertain and failure carries meaningful consequences, the player rolls **two physical six-sided dice (2d6)**.
 
-$$\text{Check Result} = \text{Physical d20 Roll} + \text{Attribute Modifier} + \text{Situational Bonuses}$$
+$$\text{Check Result} = (\text{Die}_1 + \text{Die}_2) + \text{Attribute Modifier} + \text{Situational Bonus}$$
 
 $$\text{Success Condition} = \text{Check Result} \ge \text{Target Difficulty Class (DC)}$$
 
-### 2.1 Standard Difficulty Classes (DC)
+The sum of the two 6-sided dice forms a classic bell curve ranging from 2 to 12 (with an average roll of 7). Attribute modifiers and situational bonuses shift this result across calibrated Difficulty Classes.
 
-| Difficulty Level | Target DC | Typical Context in 11th-Century Chola |
-| :--- | :--- | :--- |
-| **Easy** | **DC 8** | Spotting obvious port cargo, speaking basic Tamil/local dialects, navigating calm inland canals. |
-| **Routine Under Pressure** | **DC 11** | Interrogating a nervous dock clerk, repairing a boat during rain, striking an unprepared thug. |
-| **Difficult** | **DC 14** | Deciphering ancient Grantha temple script, tracking through muddy forest, dodging a spear trap. |
-| **Very Difficult** | **DC 17** | Sailing through a monsoon squall, persuading an armed mercenary leader, inspecting damaged ship hulls. |
-| **Exceptional** | **DC 20** | Pacifying the ancient Ashen Guardian without the seal, spotting an erased line in imperial court registers. |
+### 2.1 Standard Difficulty Classes (DC for 2d6)
 
-### 2.2 Critical Rolls
-- **Natural 20 (Critical Success)**: The intended action succeeds with extraordinary flair. The GM/AI grants an immediate secondary benefit (e.g., bonus clue revealed, 0 Supplies consumed, +1 NPC Trust).
-- **Natural 1 (Critical Complication)**: The action fails with a sharp complication regardless of modifiers (e.g., weapon damaged, Threat Clock immediately ticks $+1$, or an NPC turns Hostile).
+| Difficulty Level | Target DC | Mathematical Context (Average Roll = 7) | Typical Context in 11th-Century Chola |
+| :--- | :--- | :--- | :--- |
+| **Easy** | **DC 7** | Roll of 5+ needed with +2 modifier (~83% success) | Spotting obvious port cargo, speaking basic Tamil/local dialects, navigating calm inland canals. |
+| **Routine Under Pressure** | **DC 9** | Roll of 7+ needed with +2 modifier (~58% success) | Interrogating a nervous dock clerk, repairing a boat during rain, striking an unprepared thug. |
+| **Difficult** | **DC 11** | Roll of 9+ needed with +2 modifier (~28%); 6+ with +5 (~72%) | Deciphering ancient Grantha temple script, tracking through muddy forest, dodging a spear trap. |
+| **Very Difficult** | **DC 13** | Roll of 8+ needed with +5 specialist modifier (~42% success) | Sailing through a monsoon squall, persuading an armed mercenary leader, inspecting damaged ship hulls. |
+| **Exceptional** | **DC 15** | Roll of 10+ needed with +5 specialist modifier (~16.7% success) | Pacifying the ancient Ashen Guardian without the seal, spotting an erased line in imperial court registers. |
+
+### 2.2 Critical Rolls (Natural 12 & Natural 2)
+- **Natural 12 (Double 6s / Boxcars - Critical Success)**: The intended action succeeds with extraordinary flair regardless of modifiers. The GM/AI grants an immediate secondary benefit (e.g., bonus clue revealed, 0 Supplies consumed, +1 NPC Trust).
+- **Natural 2 (Double 1s / Snake Eyes - Critical Complication)**: The action fails with a sharp complication regardless of modifiers (e.g., weapon damaged, Threat Clock immediately ticks $+1$, or an NPC turns Hostile).
 
 ### 2.3 Advantage, Disadvantage, and Group Checks
-- **Advantage (+2 Modifier)**: Awarded when a player uses an ideal tool, plans ahead, or cites authentic historical context from the Rulebook.
-- **Disadvantage (-2 Modifier)**: Imposed when operating in complete darkness, under severe injury, or in deep water without maritime training.
-- **Group Checks**: For actions undertaken as a full party (e.g., sneaking past guards or surviving a storm), the players nominate the single character with the highest relevant stat to lead, while one ally may **Assist** (granting a flat $+2$ bonus). The party avoids rolling 4 separate times for simple group tasks.
+- **Advantage (+2 Situational Bonus)**: Awarded when a player uses an ideal tool, plans ahead, or cites authentic historical context from the Rulebook.
+- **Disadvantage (-2 Situational Penalty)**: Imposed when operating in complete darkness, under severe injury, or in deep water without maritime training.
+- **Group Checks**: For actions undertaken as a full party (e.g., sneaking past guards or surviving a storm), the players nominate the single character with the highest relevant stat to lead, while one ally may **Assist** (granting a flat $+2$ situational bonus). The party avoids rolling multiple times for simple group tasks.
 
 ---
 
@@ -102,7 +104,7 @@ The party shares and manages four deterministic resource pools that constrain th
 
 ### 4.1 Hit Points (HP) & Incapacitation
 - **No Instant Death**: To keep the tabletop prototype engaging and avoid player elimination, reaching **0 HP** means the character is **Incapacitated** (unconscious or gravely injured).
-- **Incapacitated State**: An incapacitated character cannot take actions until stabilized by an ally spending 1 Supply or succeeding on a DC 11 Knowledge/Might check.
+- **Incapacitated State**: An incapacitated character cannot take actions until stabilized by an ally spending 1 Supply or succeeding on a DC 9 Knowledge/Might check.
 
 ### 4.2 Supplies
 - Represents fresh water, dried rice, dried fish, rope, lamp oil, and travel gear.
@@ -138,7 +140,7 @@ stateDiagram-v2
 SutraDhar treats combat as a dangerous, tense event rather than the primary activity of the game. Most conflicts allow stealth, negotiation, or tactical retreat.
 
 ### 5.1 Turn Order & Initiative
-When combat begins, each participant rolls $\text{d20} + \text{Agility}$. Characters act in descending order of their total result.
+When combat begins, each participant rolls $(\text{Die}_1 + \text{Die}_2) + \text{Agility}$. Characters act in descending order of their total result.
 
 ### 5.2 Turn Action Economy
 On their turn, a character may take:
@@ -149,11 +151,11 @@ On their turn, a character may take:
    - **Assist**: Grant $+2$ to an ally’s upcoming action.
    - **Interact**: Pick up the bronze seal, open a chest, or trigger a stone mechanism.
    - **Use Class Ability**: Spend Stamina or Insight to activate a unique power.
-   - **Flee / Disengage**: Attempt to escape combat (requires DC 11 Agility check).
+   - **Flee / Disengage**: Attempt to escape combat (requires DC 9 Agility check).
 
 ### 5.3 Combat Resolution Math
-- **Attack Roll**: $\text{d20} + \text{Might (Melee)}$ OR $\text{d20} + \text{Agility (Ranged)}$ vs **Target Defense**.
-- **Enemy Defense**: Common mercenaries have Defense **11–13**. Elite Ashen Seekers have Defense **14–15**. The Ashen Guardian has Defense **17**.
+- **Attack Roll**: $(\text{Die}_1 + \text{Die}_2) + \text{Might (Melee)}$ OR $(\text{Die}_1 + \text{Die}_2) + \text{Agility (Ranged)}$ vs **Target Defense**.
+- **Enemy Defense (Calibrated for 2d6)**: Common mercenaries have Defense **8–10**. Elite Ashen Seekers have Defense **11–12**. The Ashen Guardian has Defense **13**.
 - **Weapon Damage Formulas**:
   - *Chola Spear*: $1\text{d6} + 1$ damage.
   - *Composite Bow*: $1\text{d6}$ damage.
@@ -173,7 +175,7 @@ flowchart TD
     Stage2["Stage 2: Player Proposal & Leverage
 (What are the players offering? Gold, protection, authority?)"] --> Stage3
     Stage3["Stage 3: Risk or Trust Check
-(Roll d20 + Influence vs DC modified by leverage)"]
+(Roll 2d6 + Influence vs DC modified by leverage)"]
 ```
 
 ### 6.1 NPC Trust States
@@ -181,7 +183,7 @@ NPCs transition across 5 discrete relationship tiers:
 
 | Trust Tier | Mechanical Impact on Tabletop Play |
 | :--- | :--- |
-| **Hostile** | Refuses conversation. Attacks or alerts guards immediately. Requires exceptional DC 17 check to de-escalate. |
+| **Hostile** | Refuses conversation. Attacks or alerts guards immediately. Requires exceptional DC 13 check to de-escalate. |
 | **Wary** | Answers questions with half-truths. Demands Gold or proof of authority before sharing clues. |
 | **Neutral** | Polite but cautious. Willing to trade goods at standard prices; shares common rumors. |
 | **Helpful** | Volunteers hidden information. Warns the party of upcoming ambushes or traps. |

@@ -3,7 +3,7 @@
 
 > **"Tactile Magic on the Table, Infinite Intelligence in the Air."**
 
-Welcome to the definitive documentation repository for **SutraDhar**, a hybrid physical/digital tabletop roleplaying game (TTRPG) engine. SutraDhar unites the physical intimacy of tabletop gaming—printed battlemaps, physical character cards, wooden tokens, and rolling d20s—with a real-time, context-aware digital AI Game Master built in Flutter.
+Welcome to the definitive documentation repository for **SutraDhar**, a hybrid physical/digital tabletop roleplaying game (TTRPG) engine. SutraDhar unites the physical intimacy of tabletop gaming—printed battlemaps, physical character cards, wooden tokens, and rolling physical 2d6 dice—with a real-time, context-aware digital AI Game Master built in Flutter.
 
 The debut campaign, **The Lost Ship**, immerses 4 players into the maritime and political mystery of the 11th-century Chola Empire under Rajendra Chola I.
 
@@ -24,7 +24,7 @@ docs/
 │   ├── LLD_SOFTWARE.md                     # Software Architecture (Flutter, Riverpod, Drift, LLM, Audio)
 │   └── LLD_HARDWARE.md                     # Physical & Hardware Specifications (Maps, Cards, Tokens, Mics)
 ├── game_design/
-│   ├── GAME_RULES_AND_MECHANICS.md         # Deterministic Rules Engine, d20 checks, DCs, combat & social
+│   ├── GAME_RULES_AND_MECHANICS.md         # Deterministic Rules Engine, 2d6 checks, DCs, combat & social
 │   └── CHARACTERS_ROSTER.md                # The 6 Core Classes: Attributes, Abilities, Items & AI Integration
 └── narrative/
     ├── THE_LOST_SHIP_CAMPAIGN_BIBLE.md     # 12-Chapter Scenario, Canonical Timeline, Branches & Endings
@@ -63,7 +63,7 @@ Detailed fabrication and design standards for physical artifacts:
 
 ### ⚔️ [Game Rules & Mechanics](./game_design/GAME_RULES_AND_MECHANICS.md)
 The complete deterministic rules manual:
-- d20 + Attribute resolution engine against standard DCs (8 Easy, 11 Routine, 14 Difficult, 17 Very Difficult, 20 Exceptional).
+- 2d6 + Attribute resolution engine against calibrated DCs (7 Easy, 9 Routine, 11 Difficult, 13 Very Difficult, 15 Exceptional).
 - Resource systems: Hit Points (incapacitation at 0 HP), Supplies, Gold, and the dynamic Threat Clock (0–6).
 - Action economy in combat (Move + 1 meaningful Action: Attack, Defend, Assist, Interact, Flee).
 - 3-Stage Social Encounter framework (Desire $\rightarrow$ Leverage $\rightarrow$ Influence Check).
@@ -100,7 +100,7 @@ The historical and educational bedrock of the game:
 +-----------------------------------------------------------------------------------+
 |                            PHYSICAL TABLETOP LAYER                                |
 |  - Physical Parchment Battlemap       - 4 Physical Character Cards & Token Clips  |
-|  - Real d20 Dice Rolled by Players    - Physical Clue & Event Cards Handed Out    |
+|  - Real 2d6 Dice Rolled by Players    - Physical Clue & Event Cards Handed Out    |
 +-----------------------------------------+-----------------------------------------+
                                           | Tabletop Dialogue & Dice Calls
                                           v

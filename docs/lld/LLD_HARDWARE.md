@@ -94,7 +94,7 @@ Each player holds a tactile, heavyweight character reference card.
 | [ROLE ICON]  KAVALAN (THE GUARDIAN)                 HP: 14  |
 | "The Bronze Shield of the Coromandel Coast"                 |
 +-------------------------------------------------------------+
-| ATTRIBUTES (d20 Modifiers):                                 |
+| ATTRIBUTES (2d6 Modifiers):                                 |
 | [MIGHT: +5]  [AGILITY: +3]  [KNOWLEDGE: +1]                |
 | [INFLUENCE: +2]  [SEAMANSHIP: +2]                           |
 +-------------------------------------------------------------+
@@ -151,8 +151,9 @@ Physical cards are handed out by the human Game Master or drawn by players upon 
 ## 5. Dice & Token Specifications
 
 ### 5.1 Dice Standards
-- **Core Die**: One standard 20-sided die (d20) per player.
-- **Visuals**: Antique bronze or polished sandstone resin with sharp, deep-etched black or gold numbering for maximum visibility under room lighting.
+- **Core Dice**: Two standard six-sided dice (**2d6**) per player.
+- **Resolution Scoring**: Check Result = $(\text{Die}_1 + \text{Die}_2) + \text{Attribute Modifier} + \text{Situational Bonus}$.
+- **Visuals**: Antique bone, carved sandalwood, or polished sandstone cubic dice with deep-etched black or gold pips/numerals.
 - **Rolling Trays**: 8" octagonal felt/leather rolling trays to eliminate dice bouncing off the table and dampen noise for the boundary microphone.
 
 ### 5.2 Physical Tokens & Markers
