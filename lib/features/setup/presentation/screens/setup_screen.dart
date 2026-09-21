@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../domain/models/party_setup_model.dart';
+import '../../../dm_cockpit/presentation/dm_cockpit_screen.dart';
+import '../../../campaign_rules/presentation/state_providers.dart';
 import '../controllers/setup_controller.dart';
 
 class SetupScreen extends ConsumerWidget {
@@ -657,12 +659,10 @@ class SetupScreen extends ConsumerWidget {
                     ? () async {
                         final success = await controller.saveAndStartSession();
                         if (success && context.mounted) {
-                          Navigator.of(context).pop(); // Returns to HomeScreen which now shows "Continue"
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Campaign initialized! Ready to embark on The Lost Ship.'),
-                              backgroundColor: AppTheme.graniteCard,
-                            ),
+                          ref.read(gameStateProvider.notifier).initFromSession(setupState);
+                          ref.read(partyCharactersProvider.notifier).initFromSession(setupState);
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (_) => const DmCockpitScreen()),
                           );
                         }
                       }

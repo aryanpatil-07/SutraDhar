@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../setup/domain/models/party_setup_model.dart';
 import '../../../setup/presentation/screens/setup_screen.dart';
+import '../../../dm_cockpit/presentation/dm_cockpit_screen.dart';
+import '../../../campaign_rules/presentation/state_providers.dart';
 import '../controllers/home_controller.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -312,12 +314,10 @@ class HomeScreen extends ConsumerWidget {
             height: 52,
             child: ElevatedButton.icon(
               onPressed: () {
-                // Future navigation to Cockpit / Tabletop
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Resuming active session into DM Cockpit...'),
-                    backgroundColor: AppTheme.graniteCard,
-                  ),
+                ref.read(gameStateProvider.notifier).initFromSession(session);
+                ref.read(partyCharactersProvider.notifier).initFromSession(session);
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const DmCockpitScreen()),
                 );
               },
               icon: const Icon(Icons.arrow_forward_rounded),
