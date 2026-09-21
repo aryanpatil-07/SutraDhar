@@ -10,9 +10,12 @@
 ## 1. Core Philosophy: Deterministic Rules, Adaptive Story
 
 In SutraDhar, **the rules are absolute, transparent, and deterministic**.
-- Dice rolls, health totals, supply counts, threat clocks, and skill checks are governed by hard mathematical boundaries.
-- The AI Game Master provides atmospheric description, roleplays non-player characters, and suggests narrative framing, but **it cannot silently modify stats or invent rules**.
-- **Failure is Momentum**: A failed check never produces an empty "nothing happens" dead end. It always costs resources, burns time, escalates Threat, or creates an alternative complication.
+- **Player Decision Agency**: All decisions are made **exclusively by the human players through natural table dialogue, debates, and roleplay**. The AI never dictates, automates, or selects what the party decides to do.
+- **Zero Digital Dice Rolling**: The companion app **contains no digital dice rollers**. Dice are never rolled on a screen.
+- **Physical Dice for Action Resolution**: When a player takes a risky or uncertain action, the player rolls a **physical d20 die onto the table**. The resulting number is spoken aloud, parsed by the speech engine, and validated against the target DC.
+- **Dialogue-Driven Resolution**: Everyday decisions (where to travel, how to divide supplies, what to say to an official, whether to help an NPC) are resolved through **pure spoken conversation**, not dice rolls.
+- **Deterministic Bounds**: Health totals, supply counts, threat clocks, and inventory are governed by hard mathematical boundaries. The AI Game Master provides atmospheric description, roleplays NPCs, and reflects consequence, but **it cannot silently modify stats, override player agency, or invent rules**.
+- **Failure is Momentum**: A failed physical check never produces an empty "nothing happens" dead end. It always costs resources, burns time, escalates Threat, or creates an alternative complication.
 
 ---
 
